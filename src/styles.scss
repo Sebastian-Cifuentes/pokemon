@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-slider-thumb {
+    background: #6659f6;
+}
+
+.mat-slider-wrapper .mat-slider-track-fill {
+    background: #6659f6;
+}
+
+.mat-slider-wrapper .mat-slider-track-background {
+    background: #ccc;
+}
+
+.button {
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.button--action {
+    background: transparent;
+    color: #6659f6;
+    padding: 0;
+    mat-icon {
+        font-size: 20px;
+    }
+}
+
+.button--primary {
+    background-color: #6659f6;
+}
+
+.button--secondary {
+    background-color: #868686;
+}
+
+.button--close {
+    float: right;
+    color: #ccc;
+}
+
+.form {
+    margin-top: 25px;
+    .row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        .input-group {
+            display: flex;
+            align-items: center;
+            .label {
+                margin-right: 10px;
+                width: 60px
+            }
+            .input {
+                border: 1.5px solid #c8cccd;
+                border-radius: 5px;
+                padding: 10px;
+                outline: none;
+            }
+            .input-error {
+                border: 1.5px solid #af566d;
+            }
+        }
+    }
+}

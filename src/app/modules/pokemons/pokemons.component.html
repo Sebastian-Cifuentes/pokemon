@@ -1,0 +1,35 @@
+<div class="pokemons">
+
+    <h3>Listado de pokemons</h3>
+
+    <div class="pokemons__header">
+        <app-pokemon-search></app-pokemon-search>
+        <button id="create-pokemon" class="button button--primary" (click)="openModal(false)"><mat-icon>add</mat-icon> Nuevo</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Ataque</th>
+                <th>Defensa</th>
+                <th class="table--actions">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemon of pokemons">
+                <th>{{ pokemon.name }}</th>
+                <th><img width="80" [src]="pokemon.image" alt=""></th>
+                <th>{{ pokemon.attack }}</th>
+                <th>{{ pokemon.defense }}</th>
+                <th class="table--actions">
+                    <button id="edit-pokemon" class="button button--action" (click)="openModal(true, pokemon)"><mat-icon>mode_edit</mat-icon></button>
+                    <button class="button button--action"><mat-icon>delete_forever</mat-icon></button>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<ng-template appDynamicComponent></ng-template>

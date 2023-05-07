@@ -1,0 +1,46 @@
+.pokemons {
+    margin: 0 auto;
+    padding: 20px;
+    width: 75%;
+    .pokemons__header {
+        display: flex;
+        justify-content: space-between;
+        .button {
+            display: flex;
+            align-items: center;
+            mat-icon {
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        width: 100%;
+        thead {
+            tr {
+                th {
+                    border: 1.5px solid #c8cccd;
+                    padding: 10px 0
+                }
+                .table--actions {
+                    width: 13%;
+                }
+            }
+        }
+        tbody {
+            tr {
+                th {
+                    border: 1.5px solid #c8cccd;
+                    padding: 10px 10px;
+                    font-weight: 400;
+                }
+                .table--actions {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

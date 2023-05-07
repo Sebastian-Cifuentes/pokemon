@@ -1,0 +1,16 @@
+.pokemon__search {
+    position: relative;
+    mat-icon {
+        color: #828b90;
+        left: 8px;
+        position: absolute;
+        top: 7px;
+    }
+    .pokemon__input {
+        border: 1.5px solid #c8cccd;
+        border-radius: 5px;
+        padding: 10px;
+        padding-left: 36px;
+        outline: none;
+    }
+}
